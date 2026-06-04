@@ -63,13 +63,7 @@
   }
   .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
   .logo{display:flex;align-items:center;gap:12px;font-family:'Mulish',sans-serif;font-weight:800;font-size:1.2rem;color:var(--brand)}
-  /* EDIT: replace this .logo-mark block with <img src="your-logo.png" alt="Webexo Designers Ltd"> */
-  .logo-mark{
-    width:42px;height:42px;border-radius:11px;
-    background:linear-gradient(135deg,var(--brand),var(--accent));
-    display:grid;place-items:center;color:#fff;font-weight:700;font-size:1.1rem;
-    font-family:'Mulish',sans-serif;
-  }
+  .logo-mark{width:44px;height:44px;display:block;flex:0 0 auto}
   .logo small{display:block;font-family:'Mulish',sans-serif;font-weight:500;font-size:.66rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
   .nav-call{
     display:inline-flex;align-items:center;gap:8px;
@@ -220,8 +214,11 @@
 <header>
   <div class="wrap nav">
     <a class="logo" href="#">
-      <!-- EDIT: swap this .logo-mark div for <img src="YOUR-LOGO.png" alt="Webexo Designers Ltd" style="height:42px"> -->
-      <span class="logo-mark">W</span>
+      <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Webexo Designers Ltd logo">
+        <rect width="48" height="48" rx="12" fill="#0050FF"/>
+        <polyline points="11,16 16.5,34 24,22 31.5,34 37,12" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="37" cy="12" r="3" fill="#ffffff"/>
+      </svg>
       <span>Webexo Designers Ltd<small>Independent Mobile Services</small></span>
     </a>
     <!-- EDIT: replace 0800 2121 225 with your real phone number in BOTH href and text -->
@@ -361,7 +358,11 @@
   <div class="wrap">
     <div class="f-grid">
       <div class="logo" style="color:#fff">
-        <span class="logo-mark">W</span>
+        <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Webexo Designers Ltd logo">
+          <rect width="48" height="48" rx="12" fill="#ffffff"/>
+          <polyline points="11,16 16.5,34 24,22 31.5,34 37,12" fill="none" stroke="#0050FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="37" cy="12" r="3" fill="#0050FF"/>
+        </svg>
         <span style="color:#fff">Webexo Designers Ltd<small style="color:rgba(255,255,255,.65)">Independent Mobile Services</small></span>
       </div>
       <!-- EDIT phone number -->
